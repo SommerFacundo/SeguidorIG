@@ -4,11 +4,7 @@ import { MdOutlineUploadFile } from "react-icons/md";
 import { FaCheckCircle } from "react-icons/fa";
 
 export function LoadArchiveSection({followings,setFollowings,followers,setFollowers,showModal,setShowModal}){
-    const [progressBar, setProgressBar] = useState([]);
     const [cargaFinalizada, setCarga] = useState(false);
-    useEffect(()=>{
-      console.log(progressBar)
-    },[progressBar])
     const handleFileChange = (event) => {
       const files = event.target.files;
       const newFileContents = [];
