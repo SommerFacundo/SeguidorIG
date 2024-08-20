@@ -1,0 +1,103 @@
+.loadArchiveSection{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.loadArchiveSectionDiv1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.sectionTextLoad{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.sectionTextLoad h3{
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 5rem;
+    margin: 0;
+    color: rgb(59, 59, 59);
+}
+.sectionTextLoad p{
+    font-family: arial;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    color: var(--colorPrincipal);
+    text-align: start;
+}
+.loadArchive{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loadArchive .uploadArchivesBtn{
+    width: 18rem;
+    height:18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(59, 59, 59);
+    color: rgb(59, 59, 59);
+    border-radius: 2rem;
+    font-size: 5rem;
+}
+.loadArchive div .chargeIncomplete{
+    margin: 0;
+    font-size: .8rem;
+    color: #c300ff6b;
+}
+.inputLoadArchive{
+    display: none;
+}
+.checkChargeText{
+    margin: 0;
+    margin-top: 1rem;
+    font-size: .8rem;
+    color: #04490dd8;
+}
+.checkCharge{
+    color: green;
+}
+
+.containBtnEstadisticas{
+    height: 10rem;
+}
+.containBtnEstadisticas button{
+    padding: 1rem;
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+    color: white;
+    border: none;
+    border-radius: 5px;
+  cursor: pointer;
+  text-shadow: 1px 4px 5px rgba(0,0,0,0.6);
+
+  transition: background 0.3s ease;
+
+}
+.containBtnEstadisticas button:hover{
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+    opacity: 0.9;
+}
+
+@media (max-width:768px){
+    .loadArchiveSectionDiv1{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .loadArchiveSection{
+        padding-top: 10rem;
+    }
+    .containBtnEstadisticas{
+        padding: 2rem;
+    }
+}

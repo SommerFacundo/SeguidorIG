@@ -1,0 +1,12 @@
+.containListTitle{
+    width: 100%;
+    font-size: .8rem;
+    border-bottom: 1px solid var(--colorPrincipal);
+    text-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.containListTitle h3{
+    margin: .4rem;
+}

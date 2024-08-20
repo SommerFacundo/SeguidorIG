@@ -1,0 +1,66 @@
+.containFirstSection{
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fondoFirstSection{
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), 
+    url("../../../public/images/backgroundFirstSection.png");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    filter: blur(5px);
+    position: absolute;
+    
+
+}
+.waveFirstSection{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.firstSectionPrf{
+    position: absolute;
+    font-size: 8rem;
+    font-family: "New Amsterdam", sans-serif;
+    color: rgb(105, 105, 105);
+}
+.firstSectionPrf > span{
+    color: var(--colorPrincipal);
+}
+.btnIniciarFirstSection{
+    position: absolute;
+    bottom: 1.5rem;
+    z-index: 100;
+}
+.btnIniciarFirstSection button{
+    padding: 1rem;
+    border-radius:1rem;
+    background-color: transparent;
+    border: 1px solid var(--colorPrincipal);
+    color: var(--colorPrincipal);
+    font-size: 1.1rem;
+    width: 10rem;
+}
+.btnIniciarFirstSection button:hover{
+    cursor: pointer;
+    transition: 1s;
+    background-color: var(--colorPrincipal);
+    color: white;
+}
+
+@media (max-width:768px){
+    .containFirstSection{
+        height: 100vh;
+    }
+    .firstSectionPrf{
+        font-size: 4rem;
+    
+    }
+    .waveFirstSection{
+        bottom: 0 !important;
+    }
+
+}

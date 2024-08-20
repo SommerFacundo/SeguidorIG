@@ -1,0 +1,66 @@
+.containList{
+    list-style-type: none;
+    text-align: start;
+    font-size: 1rem;
+    height: 20rem;
+    overflow: auto;
+    padding: 0  ;
+}
+.containList li{
+    display: flex;
+    gap: 1rem;
+    margin-top: .5rem;
+}
+.containList li svg{
+    width: 20%;
+    font-size: 2rem;
+    color: gray;
+}
+.containList li p{
+    width: 40%;
+    margin: 0;
+}
+.containList li div{
+    width: 40%;
+}
+.containList li div a{
+    padding: .5rem;
+    width: 70%;
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    text-decoration: none;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination button{
+    border: none;
+    background-color:none ;
+    font-weight: bold;
+    padding: .5rem;
+    margin: .1rem;
+}
+.pagination button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.pagination svg{
+    font-size: 1rem;
+    margin:  0 1rem 0 1rem;
+}
+
+@media (max-width:360px){
+    .containList li div a{
+        padding: .2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+}
