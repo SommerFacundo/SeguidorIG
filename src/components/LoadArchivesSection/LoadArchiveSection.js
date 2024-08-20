@@ -13,13 +13,6 @@ export function LoadArchiveSection({followings,setFollowings,followers,setFollow
       let filesProcessed = 0;
       Array.from(files).forEach((file) => {
         const reader = new FileReader();
-        reader.onprogress = (event) => {
-          if (event.lengthComputable) {
-            const percentLoaded = Math.round((event.loaded / event.total) * 100);
-            setProgressBar(percentLoaded);
-          }
-        };
-  
         reader.onload = (e) => {
           const htmlString = e.target.result;
           newFileContents.push(htmlString);
